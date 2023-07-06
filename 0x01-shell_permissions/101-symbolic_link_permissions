@@ -1,2 +1,2 @@
 #!/bin/bash
-chown vincent:staff _hello
+ln -s --owner=vincent --group=staff _hello _hello
