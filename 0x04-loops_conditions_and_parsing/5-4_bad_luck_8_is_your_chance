@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times but in 4th time, it will display "Bad Luck" instead of "Best School"
+# and in the 8th time, it will display "good luck" instead of "Best School"
+
+i=0
+while ((i < 10)); do
+	if ((i == 3)); then
+		echo "Bad Luck"
+	elif ((i == 7)); then
+		echo "Good Luck"
+	else
+		echo "Best School"
+	fi
+	((i++))
+done
