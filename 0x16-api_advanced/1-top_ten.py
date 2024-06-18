@@ -19,6 +19,7 @@ def top_ten(subreddit):
         return
 
     url = "http://www.reddit.com/r/{}/hot.json".format(subreddit)
+    # hotInfo = requests.get(url, allow_redirects=False)
     hotInfo = requests.get(url)
     hotPosts = hotInfo.json().get("data", {}).get("children", [])
 
