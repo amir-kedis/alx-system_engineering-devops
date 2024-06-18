@@ -3,6 +3,7 @@
 
 import requests
 
+
 def recurse(subreddit, hot_list=[], after=None):
     """
     Get all hot posts for a subreddit.
